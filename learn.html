@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>FINAL OUTPUT</title>
+  </head>
+
+
+<body>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+   background-image: url('jaj.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 285vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Imprint MT Shadow;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 30px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #884b1a;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 11%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 500px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+ 
+
+.dropbtn {
+  background-color: transparent	;
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  font-family: arial;
+font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: transparent}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: #ff7200;
+  cursor: pointer;
+  padding: 50px 50px 20px; 
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 40px;
+  font-weight:bold;
+  font-family:arial;
+}
+
+.active, .collapsible:hover {
+  background-color: transparent;
+}
+
+.contentz {
+  padding: 0 50px;
+  display: none;
+  overflow: hidden;
+  color: white;
+  font-size:larger;
+ 
+}
+ul.b {
+  list-style-type: square;
+
+</style>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">JJ'REAL</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                <li><a href="file:///F:/FARM/JJ%20REAL.html#">HOME</a></li>
+               
+        
+                    
+
+	   <div class="dropdown">
+                <li><button class="dropbtn">PRODUCT</button>
+                  <div class="dropdown-content">
+                    <a href="file:///F:/FARM/product.html#">Fruits</a>
+                    <a href="file:///F:/FARM/vagetable.html">Vagetables</a>
+                    <a href="file:///F:/FARM/rootcrop.html">RootCrops</a>
+                   </div>
+                   </div>
+                      </li>
+
+		     <li><a href="file:///F:/FARM/gallery.html">GALLERY </a></li> 
+                    <li><a href="#">CONTACT</a></li> 
+                   <li><a href="#">ABOUT</a></li> 
+                   
+                   
+                </ul>
+                  </li>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="search">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+    <br><button type="button" class="collapsible">What is Agriculture?</button>
+<div class="contentz">
+  <p>What Is Agriculture?
+Agriculture is the science of cultivating soil, raising animals, and growing crops. People who work in the agricultural industry may focus their efforts on growing one or more types of crops, or they might work to raise animals, which often involves planting crops to feed those animals. Agriculture is how people produce food to feed themselves, and it's also how people produce extra food to trade for other things or to store for times when the weather keeps crops from growing well.</p>
+</div></br>
+   <button type="button" class="collapsible">Types of Agriculture</button>
+<div class="contentz">
+  <p> Although agriculture usually involves growing food for humans and animals to eat, there are other types of agriculture, too. Some farmers grow non-food plants and flowers to sell. Others farm to produce manure to be sold as fertilizer. Agriculture can also produce special materials such as flax, hemp, wool, cotton, fungi, biofuels, and ingredients for medicines. Agriculture can also involve raising animals for their skins or furs. Some farms are just large enough to provide for the farmer's family, while other farms are very big and employ lots of workers.</p>
+  
+</div>
+ <button type="button" class="collapsible">15 Things you learn growing up on a farm.</button>
+<div class="contentz">
+  <p><br>You understand life and death. You’ve seen the births of animals and developed an understanding of the circle of life at a young age.</br>
+<br>You aren’t afraid of a little dirt. There was no such thing as nice clothes.</br>
+<br>You share a family passion. Everyone in the family was expected to help and knew each of their responsibilities.</br>
+<br>You had the best story time. Nothing could be better than your grandparents’ stories about the farm back in the olden days and seeing their faces light up as you carry on the passion for agriculture.</br>
+<br>You know what the best part of summer is – the county fair. The absolute most important week of the year, where you see the results of endless hot summer days pay off.</br>
+<br>You have a deep love of the land. Every farm kid develops an appreciation for the land and a connection to nature.</br>
+<br>You enjoy a free-spirited upbringing. Many of your summer meals were eaten straight out of the garden, and you ran barefoot everywhere you went.</br>
+<br>You know what it means to be selfless. You learned to care for another person besides yourself.</br>
+<br>You learned the value of a dollar. By working harder and caring more for your animals, you received more money for your work.</br>
+<br>You know there is no better place to be raised. You realize how lucky you are to have grown up on a farm and want the same for your kids because no other upbringing can compare.</br></p>
+</div> 
+  <button type="button" class="collapsible">9 Essential Tips for Growing a Successful Crop.</button>
+<div class="contentz">
+  <p>1. Healthy Soil
+It all begins with soil. Achieving healthy soil starts with a soil test, and I recommend getting that test from a lab that does Albrecht method soil balancing. Unlike your local extension agent (where you can also get a test), these labs tell you which minerals your soil lacks in the root zone. It also reveals your soil’s organic matter. Apply compost and the minerals the lab suggests at the rates the test specifies for the highest yield. Also consider some amount of compost tea or extract to add the microbial life that’s needed.</p>
+
+<p>2. Good Bed Preparation
+If you plan to till, do not till when it is too wet. If the soil smears between your fingers instead of gently crumbling, that is too wet. Also consider no-till gardening. You can do this by adding thick layers of mulch to a bed and allowing several months for it to break down. If you don’t have that amount of time, try adding a thick layer of compost and planting directly into that</p>
+
+<p>3. Fresh Seed
+It is always tempting to use old seed, but unless it’s kept in ideal conditions, old seed has probably lost some of its germination rate and might not perform as well for you</p>
+
+<p>4. The Right Variety
+Wherever you are and whenever you plan to grow the crop, find varieties that match your climate or at least your heat or cold. If you live in a colder climate, look for cold-hardy varieties. In hotter climates, or for summer crops, look for those slow to bolt or ones that can handle the heat—whatever your average heat might be</p>
+
+<p>5. Healthy Transplant
+When using transplants, make sure the crop is healthy and vigorous before putting it in the soil. Adding a weak crop to the soil can lead to disease and pest issues.</p>
+
+<p>6. Proper Establishment
+Once the crops hit the soil, it’s important to make sure that they get established well. The block of soil should be covered completely so as to not dry out. Irrigate if conditions are dry. Immediately apply any sort of frost or pest protection.</p>
+
+<p>7. Pest Protection
+The biggest issue most crops face in terms of pests do not come from the soil, but rather they fly in (or walk in, as the case might be for deer). So making sure the susceptible crops are safe is a great way to ensure the crop’s success. Cover crops such as arugula and spring brassicas with row cover varieties that are sensitive to pest damage. Putting some amount of perimeter protection for your bigger pests (deer, hogs, and so on) might also be essential in some areas.</p>
+
+<p>8. Good Moisture
+You can keep the crop in moist soil many different ways, but doing so is necessary for the success of most crops. Some crops are drought tolerant, but crops live off the microbial activity below them, and the microbes need water. Keep the soil covered to preserve moisture and consider some amount of irrigation</p>
+
+<p>9. Weed Management
+Weeds can quickly smother and outcompete crops, making them unproductive or difficult to harvest. So managing weeds becomes a critical step in having a successful crop of any sort. Not tilling helps, as does regular garden cultivation. If you address weeds from the very beginning, before there is an issue, they will always be easier to manage, which will lead to a more successful crop.</p>
+</div>
+          </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var contentz = this.nextElementSibling;
+    if (contentz.style.display === "block") {
+      contentz.style.display = "none";
+    } else {
+      contentz.style.display = "block";
+    }
+  });
+}
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>FINAL OUTPUT</title>
+  </head>
+
+
+<body>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+   background-image: url('jaj.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Imprint MT Shadow;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 30px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #884b1a;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 11%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 500px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.dropbtn {
+  background-color: transparent	;
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  font-family: arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: transparent}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+div.gallery img {
+    float: left;
+    width:  300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+.responsive {
+  padding: 30px 30px 0px 90px;
+  float: left;
+  
+}
+
+@media only screen and (max-width: 100px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ws-btn {
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    background-color: #ff7200;
+    color: rgba(0,0,0,0.8);
+}
+p {
+    padding-top: 80vh;
+    padding-left: 95vh;
+}
+</style>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">JJ'REAL</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                <li><a href="file:///F:/FARM/JJ%20REAL.html#">HOME</a></li>
+               
+        
+                    
+
+	   <div class="dropdown">
+                <li><button class="dropbtn">PRODUCT</button>
+                  <div class="dropdown-content">
+                    <a href="file:///F:/FARM/product.html#">Fruits</a>
+                    <a href="file:///F:/FARM/vagetable.html">Vagetables</a>
+                    <a href="file:///F:/FARM/rootcrop.html">RootCrops</a>
+                   </div>
+                   </div>
+                      </li>
+
+		     <li><a href="file:///F:/FARM/gallery.html">GALLERY </a></li> 
+                    <li><a href="#">CONTACT</a></li> 
+                   <li><a href="#">ABOUT</a></li> 
+                   
+                   
+                </ul>
+                  </li>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="search">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="received_313146400893416.jpeg">
+      <img src="received_313146400893416.jpeg">
+    </a>
+    </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="received_1418783458572684.jpeg">
+      <img src="received_1418783458572684.jpeg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="received_974663426566785.jpeg">
+      <img src="received_974663426566785.jpeg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="received_368391161970761.jpeg">
+      <img src="received_368391161970761.jpeg">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="download.jpg">
+      <img src="download.jpg">
+    </a>
+    </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="e5549d8d575e143784880358dde3f861--health-super-bitter-melon.jpg">
+      <img src="e5549d8d575e143784880358dde3f861--health-super-bitter-melon.jpg">
+    </a>
+  </div>
+</div>
+      <p><a target="_blank" href="file:///F:/FARM/nextz.html" class="ws-btn">Next »</a></p>
+            
+
+                
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
